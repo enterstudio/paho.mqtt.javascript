@@ -1,9 +1,15 @@
 {
-	"name": "paho-client",
-	"description": "Pre reqs for the Paho JS client",
-	"dependencies": {
-		"websocket": "1.x.x",
-		"node-localstorage": "0.x.x",
-		"jasmine-node": "1.11.x"
-	}
+  "name": "paho-client",
+  "description": "Pre reqs for the Paho JS client",
+  "dependencies": {
+    "websocket": "1.x.x",
+    "node-localstorage": "0.x.x",
+    "jasmine-node": "1.11.x",
+    "snyk": "^1.104.2"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
